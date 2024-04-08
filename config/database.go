@@ -38,7 +38,7 @@ func init() {
 			},
 			"sqlite": map[string]any{
 				"driver":   "sqlite",
-				"database": config.Env("DB_DATABASE", "forge"),
+				"database": config.Env("DB_DATABASE_XIAOYA", "forge"),
 				"prefix":   "",
 				"singular": false, // Table name is singular
 			},
@@ -60,6 +60,12 @@ func init() {
 					"port":     config.Env("REDIS_PORT", 6379),
 					"database": config.Env("REDIS_DB", 0),
 				},
+			},
+			"xiaoya": map[string]any{
+				"driver":   "sqlite",
+				"database": config.Env("DB_DATABASE_XIAOYA", "forge"),
+				"prefix":   "",
+				"singular": false, // Table name is singular
 			},
 		},
 

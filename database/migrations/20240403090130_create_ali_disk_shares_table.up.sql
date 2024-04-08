@@ -5,6 +5,7 @@ CREATE TABLE ali_disk_shares
     updated_at datetime(3)         NOT NULL,
     share_id   varchar(255)        NOT NULL default '',
     password   varchar(255)        NOT NULL default '',
+    flag       varchar(255)        NOT NULL default '',
     PRIMARY KEY (id),
     KEY idx_ali_disk_shares_created_at (created_at),
     KEY idx_ali_disk_shares_updated_at (updated_at)
