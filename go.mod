@@ -8,6 +8,7 @@ require (
 	github.com/goravel/redis v1.1.0
 	github.com/stretchr/testify v1.8.4
 	google.golang.org/grpc v1.58.2
+	gorm.io/datatypes v1.2.0
 )
 
 require (
