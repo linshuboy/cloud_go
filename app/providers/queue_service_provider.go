@@ -4,6 +4,7 @@ import (
 	"github.com/goravel/framework/contracts/foundation"
 	"github.com/goravel/framework/contracts/queue"
 	"github.com/goravel/framework/facades"
+	"goravel/app/jobs"
 )
 
 type QueueServiceProvider struct {
@@ -18,5 +19,10 @@ func (receiver *QueueServiceProvider) Boot(app foundation.Application) {
 }
 
 func (receiver *QueueServiceProvider) Jobs() []queue.Job {
-	return []queue.Job{}
+	return []queue.Job{
+		&jobs.PinyiAddIpPool{},
+		&jobs.GetAliShareFile{},
+		&jobs.PinyiAddWhiteList{},
+		&jobs.PinyiRemoveInvalidIp{},
+	}
 }

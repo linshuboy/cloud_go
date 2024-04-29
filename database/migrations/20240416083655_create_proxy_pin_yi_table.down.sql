@@ -1,1 +1,1 @@
-DROP TABLE IF EXISTS proxy_pin_yi;
+DROP TABLE IF EXISTS proxy_pin_yis;

@@ -4,6 +4,7 @@ CREATE TABLE ali_disk_share_files
     created_at     datetime(3)         NOT NULL,
     updated_at     datetime(3)         NOT NULL,
     deleted_at     datetime(3)         NULL,
+    completed_at   datetime(3)         NULL,
     drive_id       varchar(255)        NOT NULL default '' comment '驱动器id',
     domain_id      varchar(255)        NOT NULL default '' comment '域id',
     file_id        varchar(255)        NOT NULL default '' comment '文件id',
@@ -15,6 +16,7 @@ CREATE TABLE ali_disk_share_files
     PRIMARY KEY (id),
     KEY idx_ali_disk_share_files_created_at (created_at),
     KEY idx_ali_disk_share_files_updated_at (updated_at),
-    KEY idx_ali_disk_share_files_deleted_at (deleted_at)
+    KEY idx_ali_disk_share_files_deleted_at (deleted_at),
+    KEY idx_ali_disk_share_files_completed_at (completed_at)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

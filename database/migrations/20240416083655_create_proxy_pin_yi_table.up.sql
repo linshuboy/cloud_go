@@ -1,4 +1,4 @@
-CREATE TABLE proxy_pin_yi
+CREATE TABLE proxy_pin_yis
 (
     id         bigint(20) unsigned NOT NULL AUTO_INCREMENT,
     created_at datetime(3)         NOT NULL,
@@ -7,8 +7,8 @@ CREATE TABLE proxy_pin_yi
     user_id    varchar(255)        NOT NULL default '' comment '用户id',
     appkey     varchar(255)        NOT NULL default '' comment '用户密钥',
     PRIMARY KEY (id),
-    KEY idx_proxy_pin_yi_created_at (created_at),
-    KEY idx_proxy_pin_yi_updated_at (updated_at),
-    KEY idx_proxy_pin_yi_deleted_at (deleted_at)
+    KEY idx_proxy_pin_yis_created_at (created_at),
+    KEY idx_proxy_pin_yis_updated_at (updated_at),
+    KEY idx_proxy_pin_yis_deleted_at (deleted_at)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
