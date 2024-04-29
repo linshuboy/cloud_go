@@ -7,8 +7,9 @@ require (
 	github.com/goravel/gin v1.1.7
 	github.com/goravel/redis v1.1.0
 	github.com/stretchr/testify v1.8.4
+	golang.org/x/exp v0.0.0-20230315142452-642cacee5cc0
 	google.golang.org/grpc v1.58.2
-	gorm.io/datatypes v1.2.0
+	gorm.io/gorm v1.25.4
 )
 
 require (
@@ -149,7 +150,6 @@ require (
 	go.uber.org/atomic v1.11.0 // indirect
 	golang.org/x/arch v0.4.0 // indirect
 	golang.org/x/crypto v0.14.0 // indirect
-	golang.org/x/exp v0.0.0-20230315142452-642cacee5cc0 // indirect
 	golang.org/x/mod v0.12.0 // indirect
 	golang.org/x/net v0.14.0 // indirect
 	golang.org/x/oauth2 v0.10.0 // indirect
@@ -169,7 +169,6 @@ require (
 	gorm.io/driver/mysql v1.5.1 // indirect
 	gorm.io/driver/postgres v1.5.2 // indirect
 	gorm.io/driver/sqlserver v1.5.1 // indirect
-	gorm.io/gorm v1.25.4 // indirect
 	gorm.io/plugin/dbresolver v1.4.7 // indirect
 	modernc.org/libc v1.22.5 // indirect
 	modernc.org/mathutil v1.5.0 // indirect
